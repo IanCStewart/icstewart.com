@@ -1,0 +1,38 @@
+{
+  "name": "icstewart.com",
+  "version": "0.0.1",
+  "description": "Portfolio website for Ian Stewart",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-mocha": "^4.9.0",
+    "eslint-plugin-react": "^6.10.3",
+    "react-scripts": "0.9.5"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/**/*.{js,jsx}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanCStewart/icstewart.com.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Ian Stewart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IanCStewart/icstewart.com/issues"
+  },
+  "homepage": "https://github.com/IanCStewart/icstewart.com#readme"
+}
