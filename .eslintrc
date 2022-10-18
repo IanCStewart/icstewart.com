@@ -1,10 +1,14 @@
 {
   "extends": "airbnb",
   "rules": {
-    "comma-dangle": 0,
-    "jsx-a11y/no-static-element-interactions": 0
-  },
-  "plugins": [
-    "mocha"
-  ]
+    "react/jsx-filename-extension": [
+      "off"
+    ],
+    "react/require-default-props": [
+      "off"
+    ],
+    "react/jsx-one-expression-per-line": [
+      "off"
+    ]
+  }
 }
