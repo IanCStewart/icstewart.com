@@ -6,13 +6,13 @@ import SEO from './SEO';
 import { contentWrapper, contentContainer } from './Layout.module.css';
 
 const propTypes = {
-  pageTitle: PropTypes.string.isRequired,
+  pageTitle: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 const Layout = (props) => {
   const {
-    pageTitle,
+    pageTitle = undefined,
     children,
   } = props;
 
