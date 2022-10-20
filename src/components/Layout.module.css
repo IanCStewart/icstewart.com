@@ -1,0 +1,22 @@
+.content-wrapper {
+  width: 100%;
+  background-color: var(--black);
+}
+
+.content-container {
+  max-width: var(--max-width);
+  padding: 8px 16px;
+  margin: 0 auto;
+}
+
+@media (min-width: 414px) {
+  .content-container {
+    padding: 8px 24px;
+  }
+}
+
+@media (min-width: 810px) {
+  .content-container {
+    padding: 20px 24px;
+  }
+}
