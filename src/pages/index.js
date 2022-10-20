@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 const HomePage = () => (
-  <Layout pageTitle="Ian - Front-end Developer">
+  <Layout>
     <section>
       &quot;content goes here&quot;
     </section>
