@@ -1,7 +1,7 @@
 module.exports = {
   url: 'https://icstewart.com',
-  title: 'icstewart.nl',
-  titleTemplate: 'Ian Stewart — Front-end Developer',
+  title: 'Front-end Developer',
+  titleTemplate: 'Ian Stewart | %s',
   subtitle: 'A Creative Front-end Developer.',
   copyright: '© Ian Stewart, 2022. All rights reserved.',
   menu: [],
