@@ -1,0 +1,16 @@
+:root {
+  --black: #050505;
+  --white: #fefefe;
+  --light-gray: #D8D8D8;
+  --gray: #7C7C7C;
+  --dark-gray: #212121;
+  --active-link: #95abd6;
+  --divider: #979797;
+  --transparent-black: rgba(5,5,5,0.9);
+  --overlay: rgba(5,5,5,0.75);
+
+  --max-width: 1215px;
+  --max-text-width: 554px;
+
+  --cubic-bezier: cubic-bezier(.29,-0.04,.25,1.05);
+}
