@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import SEO from './SEO';
+import Header from './Header';
 
 import { contentWrapper, contentContainer } from './Layout.module.css';
 
@@ -19,6 +20,7 @@ const Layout = (props) => {
   return (
     <main>
       <SEO title={pageTitle} />
+      <Header />
       <section className={contentWrapper}>
         <article className={contentContainer}>
           {children}

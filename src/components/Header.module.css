@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 54.671875px;
+  height: 35px;
+}
