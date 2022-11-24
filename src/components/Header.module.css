@@ -12,6 +12,8 @@
 }
 
 .logo {
-  width: 54.671875px;
-  height: 35px;
+  font-family: 'Suez One', serif;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 2rem;
 }
