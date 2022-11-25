@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
+import LogoLight from '../svg/logo-light.svg';
+
 import {
   header,
   contentContainer,
@@ -11,8 +13,8 @@ import {
 const Header = () => (
   <header className={header}>
     <section className={contentContainer}>
-      <Link to="/" className={logo}>
-        Ian.
+      <Link to="/">
+        <LogoLight fill="#FEFEFE" className={logo} />
       </Link>
       <nav>
         <Link to="/cv" className={link}>
