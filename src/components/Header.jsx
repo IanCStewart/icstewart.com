@@ -3,13 +3,9 @@ import { Link } from 'gatsby';
 
 import {
   header,
-  // transparentHeader,
-  // scrolledHeader,
   contentContainer,
-  // link,
-  // nav,
+  link,
   logo,
-  // menuButton,
 } from './Header.module.css';
 
 const Header = () => (
@@ -19,10 +15,10 @@ const Header = () => (
         Ian.
       </Link>
       <nav>
-        <Link to="/cv">
+        <Link to="/cv" className={link}>
           Resume
         </Link>
-        <Link to="/contact">
+        <Link to="/contact" className={link}>
           Contact
         </Link>
       </nav>

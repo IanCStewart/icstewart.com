@@ -5,18 +5,18 @@
 
 .content-container {
   max-width: var(--max-width);
-  padding: 8px 16px;
+  padding: var(--spacing-xs) var(--spacing-s);
   margin: 0 auto;
 }
 
 @media (min-width: 414px) {
   .content-container {
-    padding: 8px 24px;
+    padding: var(--spacing-xs) var(--spacing-m);
   }
 }
 
 @media (min-width: 810px) {
   .content-container {
-    padding: 20px 24px;
+    padding: var(--spacing-s) var(--spacing-m);
   }
 }

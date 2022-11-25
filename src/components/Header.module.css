@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: var(--max-width);
+  padding: var(--spacing-xs) var(--spacing-s);
   margin: 0 auto;
 }
 
@@ -16,4 +17,34 @@
   color: var(--white);
   text-decoration: none;
   font-size: 2rem;
+}
+
+.link {
+  font-size: 1.125rem;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-left: var(--spacing-m);
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .3s ease-in-out;
+  padding-bottom: 4px;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+@media (min-width: 414px) {
+  .content-container {
+    padding: var(--spacing-xs) var(--spacing-m);
+  }
+}
+
+@media (min-width: 810px) {
+  .content-container {
+    padding: var(--spacing-s) var(--spacing-m);
+  }
 }
