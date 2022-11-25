@@ -1,6 +1,7 @@
 .content-wrapper {
   width: 100%;
   background-color: var(--black);
+  padding-top: 3.125rem;
 }
 
 .content-container {
@@ -16,6 +17,10 @@
 }
 
 @media (min-width: 810px) {
+  .content-wrapper {
+    padding-top: 4.125rem;
+  }
+
   .content-container {
     padding: var(--spacing-s) var(--spacing-m);
   }
