@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 const HomePage = () => (
   <Layout>
     <section>
-      &quot;content goes here&quot;
+      <h1>Hi! I&apos;m a <span>creative</span> frontend developer.</h1>
     </section>
   </Layout>
 );
