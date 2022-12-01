@@ -1,17 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { ReactNode } from 'react';
 
 import SEO from './SEO';
 import Header from './Header';
 
 import { contentWrapper, contentContainer } from './Layout.module.css';
 
-const propTypes = {
-  pageTitle: PropTypes.string,
-  children: PropTypes.node.isRequired,
+type Props = {
+  pageTitle?: string;
+  children: ReactNode;
 };
 
-const Layout = (props) => {
+const Layout = (props: Props) => {
   const {
     pageTitle = undefined,
     children,
@@ -29,7 +28,5 @@ const Layout = (props) => {
     </main>
   );
 };
-
-Layout.propTypes = propTypes;
 
 export default Layout;

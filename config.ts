@@ -1,4 +1,4 @@
-module.exports = {
+const siteConfig = {
   url: 'https://icstewart.com',
   title: 'Front-end Developer',
   titleTemplate: 'Ian Stewart | %s',
@@ -15,3 +15,5 @@ module.exports = {
   },
   previewImage: '/seo-image.png',
 };
+
+export default siteConfig;

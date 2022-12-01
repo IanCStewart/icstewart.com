@@ -1,7 +1,9 @@
-const autoprefixer = require('autoprefixer');
-const siteConfig = require('./config');
+import type { GatsbyConfig } from 'gatsby';
+import siteConfig from './config';
 
-module.exports = {
+const autoprefixer = require('autoprefixer');
+
+const config: GatsbyConfig = {
   siteMetadata: {
     url: siteConfig.url,
     siteUrl: siteConfig.url,
@@ -77,4 +79,7 @@ module.exports = {
       },
     },
   ],
+  graphqlTypegen: true,
 };
+
+export default config;

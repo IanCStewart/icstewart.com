@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@gatsbyjs/reach-router';
 import { useStaticQuery, graphql } from 'gatsby';
@@ -18,19 +17,19 @@ const query = graphql`
   }
 `;
 
-const propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
-  article: PropTypes.bool,
+type Props = {
+  title?: string;
+  description?: string;
+  image?: string;
+  article?: boolean;
 };
 
 const SEO = ({
   title,
   description,
   image,
-  article,
-}) => {
+  article = false,
+}: Props) => {
   const { pathname } = useLocation();
 
   const { site } = useStaticQuery(query);
@@ -57,7 +56,7 @@ const SEO = ({
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
-      {(article ? true : null) && <meta property="og:type" content="article" />}
+      {article && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (
         <meta property="og:description" content={seo.description} />
@@ -75,7 +74,5 @@ const SEO = ({
     </Helmet>
   );
 };
-
-SEO.propTypes = propTypes;
 
 export default SEO;

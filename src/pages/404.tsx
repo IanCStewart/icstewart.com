@@ -8,11 +8,16 @@ const NotFoundPage = () => (
     <article>
       <h1>404 - Page not Found</h1>
       <p>
-        Sorry{' '}
+        Sorry
+        {' '}
         <span role="img" aria-label="Pensive emoji">
           😔
-        </span>{' '}
-        , You tried to reach a page that doesn&apos;t seem to exist. Navigate to a different page or go back to the <Link to="/">home page</Link>.
+        </span>
+        {' '}
+        , You tried to reach a page that doesn&apos;t seem to exist. Navigate to a different page or go back to the {/* eslint-disable-line max-len, react/jsx-one-expression-per-line */}
+        {' '}
+        <Link to="/">home page</Link>
+        .
       </p>
     </article>
   </Layout>
