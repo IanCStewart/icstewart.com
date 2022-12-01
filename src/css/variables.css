@@ -23,4 +23,18 @@
   --spacing-xxl: calc(5.5 * var(--spacing-unit)); /* 88px */
 
   --cubic-bezier: cubic-bezier(.29,-0.04,.25,1.05);
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  color-scheme: light dark;
+  color: var(--light-gray);
+  background-color: var(--black);
 }
